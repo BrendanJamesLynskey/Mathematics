@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Brendan Lynskey — Mathematics, Cryptography &amp; Coding Theory</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@400;500;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --bg:      #0a0a0f;
+    --surface: #131318;
+    --border:  #23232a;
+    --text:    #d4d4d8;
+    --text2:   #a1a1aa;
+    --dim:     #71717a;
+    --accent:  #f59e0b;
+    --green:   #10b981;
+    --purple:  #8b5cf6;
+    --blue:    #60a5fa;
+    --teal:    #64ffda;
+    --pink:    #ff6b9d;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { font-size: 16px; scroll-behavior: smooth; }
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    min-height: 100vh;
+  }
+  a { color: inherit; text-decoration: none; }
+
+  .container { max-width: 960px; margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+
+  /* Header */
+  header { text-align: center; margin-bottom: 3rem; }
+  header h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 2.8rem;
+    letter-spacing: -0.02em;
+    color: #fafafa;
+    margin-bottom: 0.4rem;
+  }
+  header .subtitle {
+    font-size: 1rem;
+    color: var(--text2);
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  /* Section headings */
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 2.5rem 0 1.2rem;
+    padding-bottom: 0.6rem;
+    border-bottom: 1px solid var(--border);
+  }
+  .section-icon { font-size: 1.6rem; }
+  .section-header h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #fafafa;
+  }
+  .section-header .count {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    color: var(--dim);
+    background: rgba(255,255,255,0.05);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 0.2em 0.7em;
+  }
+  .section-desc {
+    color: var(--dim);
+    font-size: 0.88rem;
+    margin-bottom: 1.2rem;
+  }
+
+  /* Presentation series cards */
+  .series-card {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 1.5rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.5rem 1.75rem;
+    margin-bottom: 1rem;
+    transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+  }
+  .series-card:hover { transform: translateX(3px); }
+  .series-card.crypto { border-left: 3px solid var(--accent); }
+  .series-card.crypto:hover { border-color: rgba(245,158,11,0.4); box-shadow: 0 0 20px rgba(245,158,11,0.06); }
+  .series-card.coding { border-left: 3px solid var(--teal); }
+  .series-card.coding:hover { border-color: rgba(100,255,218,0.4); box-shadow: 0 0 20px rgba(100,255,218,0.06); }
+
+  .series-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #fafafa;
+    margin-bottom: 0.3rem;
+  }
+  .series-card p { font-size: 0.85rem; color: var(--dim); line-height: 1.45; }
+  .series-card .badge-row { display: flex; gap: 0.4rem; margin-top: 0.5rem; flex-wrap: wrap; }
+
+  .badge {
+    display: inline-block;
+    padding: 0.2em 0.7em;
+    border-radius: 20px;
+    font-size: 0.65rem;
+    font-weight: 700;
+    font-family: 'JetBrains Mono', monospace;
+    letter-spacing: 0.03em;
+  }
+  .badge-amber  { background: rgba(245,158,11,0.1);  color: var(--accent); border: 1px solid rgba(245,158,11,0.25); }
+  .badge-teal   { background: rgba(100,255,218,0.08); color: var(--teal);   border: 1px solid rgba(100,255,218,0.2); }
+  .badge-green  { background: rgba(16,185,129,0.1);   color: var(--green);  border: 1px solid rgba(16,185,129,0.25); }
+  .badge-purple { background: rgba(139,92,246,0.1);   color: var(--purple); border: 1px solid rgba(139,92,246,0.25); }
+
+  .launch-btn {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 0.5em 1.3em;
+    border-radius: 8px;
+    white-space: nowrap;
+    transition: all 0.2s;
+  }
+  .launch-btn.amber { background: rgba(245,158,11,0.12); color: var(--accent); border: 1px solid rgba(245,158,11,0.3); }
+  .launch-btn.amber:hover { background: rgba(245,158,11,0.2); border-color: var(--accent); }
+  .launch-btn.teal { background: rgba(100,255,218,0.1); color: var(--teal); border: 1px solid rgba(100,255,218,0.25); }
+  .launch-btn.teal:hover { background: rgba(100,255,218,0.18); border-color: var(--teal); }
+
+  /* Mathematics project table */
+  .math-section { margin-top: 0.5rem; }
+  .math-category {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    color: var(--purple);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin: 1.5rem 0 0.6rem;
+    padding-left: 0.2rem;
+  }
+  .math-category:first-child { margin-top: 0; }
+
+  .project-list { display: flex; flex-direction: column; gap: 0.5rem; }
+  .project {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 1rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 0.8rem 1.2rem;
+    transition: border-color 0.2s, transform 0.15s;
+  }
+  .project:hover { border-color: rgba(139,92,246,0.3); transform: translateX(2px); }
+  .project h4 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 0.92rem;
+    color: var(--text);
+    margin-bottom: 0.1rem;
+  }
+  .project p { font-size: 0.78rem; color: var(--dim); line-height: 1.35; }
+  .project .go {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    color: var(--purple);
+    border: 1px solid rgba(139,92,246,0.25);
+    border-radius: 6px;
+    padding: 0.3em 0.8em;
+    white-space: nowrap;
+    transition: all 0.2s;
+  }
+  .project:hover .go { border-color: var(--purple); background: rgba(139,92,246,0.1); }
+
+  /* Footer */
+  footer {
+    text-align: center;
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+    font-size: 0.8rem;
+    color: var(--dim);
+  }
+  footer a { color: var(--dim); text-decoration: underline; text-underline-offset: 2px; }
+  footer a:hover { color: var(--text2); }
+
+  @media (max-width: 640px) {
+    header h1 { font-size: 2rem; }
+    .series-card { grid-template-columns: 1fr; gap: 0.8rem; }
+    .project { grid-template-columns: 1fr; gap: 0.5rem; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Mathematics &amp; Engineering</h1>
+  <p class="subtitle">Interactive visualisations, presentation series, and explorations in pure mathematics, cryptography, and coding theory.</p>
+</header>
+
+<!-- ============================================================ -->
+<!-- CRYPTOGRAPHY -->
+<!-- ============================================================ -->
+<div class="section-header">
+  <span class="section-icon">&#x1f510;</span>
+  <h2>Cryptography</h2>
+  <span class="count">13 presentations</span>
+</div>
+<p class="section-desc">Interactive slide decks covering modern cryptographic systems end-to-end — from the underlying mathematics through NIST standards to SystemVerilog RTL and Python implementations.</p>
+
+<a href="https://brendanjameslynskey.github.io/Cryptography/" class="series-card crypto">
+  <div>
+    <h3>Modern Cryptography Series</h3>
+    <p>Finite fields, elliptic curves, AES, hash functions, public-key crypto, digital signatures, post-quantum, FHE, side-channel attacks, hardware accelerators, zero-knowledge proofs, MPC, and TLS 1.3.</p>
+    <div class="badge-row">
+      <span class="badge badge-amber">13 presentations</span>
+      <span class="badge badge-green">complete</span>
+      <span class="badge badge-purple">Reveal.js</span>
+    </div>
+  </div>
+  <span class="launch-btn amber">Open series &rarr;</span>
+</a>
+
+<!-- ============================================================ -->
+<!-- CODING THEORY -->
+<!-- ============================================================ -->
+<div class="section-header">
+  <span class="section-icon">&#x1f4e1;</span>
+  <h2>Coding Theory</h2>
+  <span class="count">13 presentations</span>
+</div>
+<p class="section-desc">Error detection and error correction — from parity bits and Hamming codes through Reed-Solomon, turbo codes, LDPC, and polar codes.</p>
+
+<a href="https://brendanjameslynskey.github.io/Coding/" class="series-card coding">
+  <div>
+    <h3>Coding Theory Series</h3>
+    <p>Foundations, parity checks, Hamming codes, CRC, linear block codes, convolutional codes, BCH, Reed-Solomon, turbo codes, LDPC, fountain codes, polar codes, and real-world applications.</p>
+    <div class="badge-row">
+      <span class="badge badge-teal">13 presentations</span>
+      <span class="badge badge-green">complete</span>
+      <span class="badge badge-purple">Reveal.js</span>
+    </div>
+  </div>
+  <span class="launch-btn teal">Open series &rarr;</span>
+</a>
+
+<!-- ============================================================ -->
+<!-- MATHEMATICS -->
+<!-- ============================================================ -->
+<div class="section-header">
+  <span class="section-icon">&#x222b;</span>
+  <h2>Mathematics</h2>
+  <span class="count">20 projects</span>
+</div>
+<p class="section-desc">Interactive single-page visualisations built with Plotly.js and vanilla HTML/CSS/JS — no build step, no dependencies to install.</p>
+
+<div class="math-section">
+
+<div class="math-category">Analysis &amp; Calculus</div>
+<div class="project-list">
+  <a href="https://github.com/BrendanJamesLynskey/Taylor_Series_Visualisation" class="project">
+    <div><h4>Taylor Series Visualisation</h4><p>Taylor polynomial approximations for 20 functions — convergence regions, adjustable order</p></div>
+    <span class="go">View &rarr;</span>
+  </a>
+  <a href="https://github.com/BrendanJamesLynskey/Complex_Taylor_Series_Visualisation" class="project">
+    <div><h4>Complex Taylor Series Visualisation</h4><p>Domain colouring and 3D magnitude surfaces for Taylor series of 12 complex functions</p></div>
+    <span class="go">View &rarr;</span>
+  </a>
+  <a href="https://github.com/BrendanJamesLynskey/Fourier_Series_Visualisation" class="project">
+    <div><h4>Fourier Series Visualisation</h4><p>Build periodic waveforms term by term — Gibbs phenomenon, frequency spectra, adjustable harmonics</p></div>
+    <span class="go">View &rarr;</span>
+  </a>
+  <a href="https://github.com/BrendanJamesLynskey/Curvature_Visualiser" class="project">
+    <div><h4>Curvature Visualiser</h4><p>Osculating circles, curvature plots, and evolutes for parametric curves</p></div>
+    <span class="go">View &rarr;</span>
+  </a>
+</div>
+
+<div class="math-category">Complex Analysis</div>
+<div class="project-list">
+  <a href="https://github.com/BrendanJamesLynskey/Conformal_Mapping_Gallery" class="project">
+    <div><h4>Conformal Mapping Gallery</h4><p>Complex mappings — z&sup2;, e&#7611;, 1/z, M&ouml;bius, Joukowski airfoil — grid warping, domain colouring</p></div>
+    <span class="go">View &rarr;</span>
+  </a>
+  <a href="https://github.com/BrendanJamesLynskey/Riemann_Zeta_Visualisation" class="project">
+    <div><h4>Riemann Zeta Visualisation</h4><p>Domain colouring of &zeta;(s) on the critical strip — non-trivial zeros, functional equation</p></div>
+    <span class="go">View &rarr;</span>
+  </a>
+</div>
+
+<div class="math-category">Linear Algebra</div>
+<div class="project-list">
+  <a href="https://github.com/BrendanJamesLynskey/Linear_Transformation_Visualiser" class="project">
+    <div><h4>Linear Transformation Visualiser</h4><p>2&times;2 matrices warp grids, circles, vectors — eigenvalue/eigenvector overlays, SVD</p></div>
+    <span class="go">View &rarr;</span>
+  </a>
+  <a href="https://github.com/BrendanJamesLynskey/Eigenvalue_Explorer" class="project">
+    <div><h4>Eigenvalue Explorer</h4><p>Drag matrix entries and watch eigenvalues move in the complex plane</p></div>
+    <span class="go">View &rarr;</span>
+  </a>
+</div>
+
+<div class="math-category">Dynamical Systems &amp; Control</div>
+<div class="project-list">
+  <a href="https://github.com/BrendanJamesLynskey/ODE_Phase_Portraits" class="project">
+    <div><h4>ODE Phase Portraits</h4><p>Vector fields and trajectories — Van der Pol, Lotka-Volterra, Duffing, nullclines</p></div>
+    <span class="go">View &rarr;</span>
+  </a>
+  <a href="https://github.com/BrendanJamesLynskey/Laplace_Pole_Zero_Explorer" class="project">
+    <div><h4>Laplace Pole-Zero Explorer</h4><p>Interactive s-plane — drag poles/zeros, live impulse response and Bode plots</p></div>
+    <span class="go">View &rarr;</span>
+  </a>
+</div>
+
+<div class="math-category">Abstract Algebra</div>
+<div class="project-list">
+  <a href="https://github.com/BrendanJamesLynskey/Group_Theory_Visualiser" class="project">
+    <div><h4>Group Theory Visualiser</h4><p>Cayley graphs, multiplication tables, subgroup lattices for cyclic, dihedral, symmetric groups</p></div>
+    <span class="go">View &rarr;</span>
+  </a>
+  <a href="https://github.com/BrendanJamesLynskey/Galois_Fields" class="project">
+    <div><h4>Galois Fields in Hardware</h4><p>GF(2&#8319;) theory — finite field arithmetic, irreducible polynomials, CRC, LFSR, AES</p></div>
+    <span class="go">View &rarr;</span>
+  </a>
+</div>
+
+<div class="math-category">Topology &amp; Geometry</div>
+<div class="project-list">
+  <a href="https://github.com/BrendanJamesLynskey/Topology_Knot_Theory_Visualiser" class="project">
+    <div><h4>Topology &amp; Knot Theory Visualiser</h4><p>M&ouml;bius strip, Klein bottle, torus, Euler characteristic, knot explorer</p></div>
+    <span class="go">View &rarr;</span>
+  </a>
+  <a href="https://github.com/BrendanJamesLynskey/Differential_Geometry" class="project">
+    <div><h4>Differential Geometry</h4><p>Gaussian curvature, geodesic tracer, parallel transport, Gauss-Bonnet theorem</p></div>
+    <span class="go">View &rarr;</span>
+  </a>
+  <a href="https://github.com/BrendanJamesLynskey/Hyperbolic_Geometry" class="project">
+    <div><h4>Hyperbolic Geometry</h4><p>Poincar&eacute; disk, upper half-plane, hyperbolic tilings, isometry explorer</p></div>
+    <span class="go">View &rarr;</span>
+  </a>
+</div>
+
+<div class="math-category">Number Theory</div>
+<div class="project-list">
+  <a href="https://github.com/BrendanJamesLynskey/Prime_Spirals" class="project">
+    <div><h4>Prime Spirals</h4><p>Ulam, Sacks, and Archimedes spirals — colouring by factorisation, twin primes, prime gaps</p></div>
+    <span class="go">View &rarr;</span>
+  </a>
+</div>
+
+<div class="math-category">Probability &amp; Statistics</div>
+<div class="project-list">
+  <a href="https://github.com/BrendanJamesLynskey/Central_Limit_Theorem" class="project">
+    <div><h4>Central Limit Theorem</h4><p>Sample from any distribution, watch convergence — animated histogram, Q-Q plot</p></div>
+    <span class="go">View &rarr;</span>
+  </a>
+  <a href="https://github.com/BrendanJamesLynskey/Random_Walk_Visualisation" class="project">
+    <div><h4>Random Walk Visualisation</h4><p>1D/2D random walks, Brownian motion, L&eacute;vy flights, diffusion envelopes</p></div>
+    <span class="go">View &rarr;</span>
+  </a>
+  <a href="https://github.com/BrendanJamesLynskey/Markov_Chain_Visualisation" class="project">
+    <div><h4>Markov Chain Visualisation</h4><p>State diagram editor, animated simulation, stationary distribution, matrix analysis</p></div>
+    <span class="go">View &rarr;</span>
+  </a>
+</div>
+
+<div class="math-category">Information Theory</div>
+<div class="project-list">
+  <a href="https://github.com/BrendanJamesLynskey/Information_Theory" class="project">
+    <div><h4>Information Theory</h4><p>Shannon entropy, mutual information, channel capacity, Huffman coding, KL divergence</p></div>
+    <span class="go">View &rarr;</span>
+  </a>
+</div>
+
+<div class="math-category">Numerical Analysis</div>
+<div class="project-list">
+  <a href="https://github.com/BrendanJamesLynskey/Numerical_Methods" class="project">
+    <div><h4>Numerical Methods</h4><p>Root finding, numerical integration, ODE solvers (Euler, RK4), polynomial interpolation</p></div>
+    <span class="go">View &rarr;</span>
+  </a>
+</div>
+
+<div class="math-category">Control Theory</div>
+<div class="project-list">
+  <a href="https://github.com/BrendanJamesLynskey/Control_Theory" class="project">
+    <div><h4>Control Theory</h4><p>PID tuning, root locus, Bode plots, Nyquist diagrams, state-space analysis</p></div>
+    <span class="go">View &rarr;</span>
+  </a>
+</div>
+
+</div><!-- /math-section -->
+
+<footer>
+  <p>All projects are open source and educational. Built with Reveal.js, Plotly.js, and vanilla HTML/CSS/JS.</p>
+</footer>
+
+</div><!-- /container -->
+</body>
+</html>
