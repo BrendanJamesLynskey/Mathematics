@@ -179,7 +179,7 @@ Interactive single-page visualisations built with Plotly.js and vanilla HTML/CSS
 
 ## Historical Physicists
 
-36 interactive presentations (17 slides each, all ✅ complete) on the lives, experiments, and theories of history's greatest physicists — from Galileo's telescopic revolution through Penrose's singularity theorems, covering the scientific revolution, classical electromagnetism, signal processing pioneers, the quantum revolution, and modern cosmology.
+37 interactive presentations (17 slides each, all ✅ complete) on the lives, experiments, and theories of history's greatest physicists — from Galileo's telescopic revolution through Penrose's singularity theorems, covering the scientific revolution, classical electromagnetism, signal processing pioneers, the quantum revolution, and modern cosmology.
 
 ### [Open the Historical Physicists Series](https://brendanjameslynskey.github.io/Historical_Physicists/)
 
@@ -196,7 +196,8 @@ Interactive single-page visualisations built with Plotly.js and vanilla HTML/CSS
 | 09 | Maxwell | 21 | Bohr | 33 | Bell |
 | 10 | Boltzmann | 22 | Bromwich | 34 | Penrose |
 | 11 | Gibbs | 23 | Born | 35 | Higgs |
-| 12 | FitzGerald | 24 | Schrödinger | 36 | Hawking |
+| 12 | FitzGerald | 24 | Schrödinger | 36 | Deutsch |
+| | | | | 37 | Hawking |
 
 ---
 
