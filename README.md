@@ -159,6 +159,7 @@ Interactive single-page visualisations built with Plotly.js and vanilla HTML/CSS
 | [Complex Taylor Series Visualisation](https://github.com/BrendanJamesLynskey/Complex_Taylor_Series_Visualisation) | Domain colouring and 3D magnitude surfaces for Taylor series of 12 complex functions — split-view comparison, presets, convergence boundaries |
 | [Fourier Series Visualisation](https://github.com/BrendanJamesLynskey/Fourier_Series_Visualisation) | Build periodic waveforms term by term — square, sawtooth, triangle and more with Gibbs phenomenon, frequency spectra, and adjustable harmonics |
 | [Curvature Visualiser](https://github.com/BrendanJamesLynskey/Curvature_Visualiser) | Osculating circles, curvature plots, and evolutes for parametric curves — ellipses, spirals, cardioids, Lissajous, and more |
+| [Vector Calculus Visualiser](https://github.com/BrendanJamesLynskey/Vector_Calculus) | Vector fields, gradient & contours, divergence & curl, line integrals, Green's/Stokes'/Divergence theorems, and 3D vector fields |
 
 ### Complex Analysis
 
