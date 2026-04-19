@@ -52,6 +52,23 @@ Interactive slide decks on error detection and error correction — from parity 
 
 ---
 
+## Mathematical Methods for Science Students
+
+A self-contained curriculum in the core mathematical methods used across the physical sciences — from single-variable calculus through complex analysis, vector calculus, linear algebra and differential equations. Every topic is an interactive single-page app in the same Plotly.js + dark-theme style as the rest of this collection.
+
+| # | Topic | Coverage | Status |
+| --- | --- | --- | --- |
+| 01 | [Differential Calculus of One Variable](https://github.com/BrendanJamesLynskey/Differential_Calculus_Explorer) | Limits, derivative as a limit, rules of differentiation, L'Hôpital's rule, extrema & concavity, differentials & linearisation | ✅ Complete |
+| 02 | [Integral Calculus](https://github.com/BrendanJamesLynskey/Integral_Calculus_Explorer) | Riemann sums, fundamental theorem, substitution, parts, partial fractions, improper integrals, Gaussian & Gamma | ✅ Complete |
+| 03 | [Calculus of Many Variables](https://github.com/BrendanJamesLynskey/Multivariable_Calculus_Explorer) | Scalar fields, partial derivatives, gradient, directional derivatives, Lagrange multipliers, Jacobians, solid angle | ✅ Complete |
+| 04 | [Infinite Series](https://github.com/BrendanJamesLynskey/Infinite_Series_Explorer) | Sequences, partial sums, convergence tests, power series & radius of convergence, asymptotic series | ✅ Complete |
+| 05 | [Complex Numbers & Functions of a Complex Variable](https://github.com/BrendanJamesLynskey/Complex_Analysis_Explorer) | Argand arithmetic, De Moivre, Euler, Cauchy–Riemann, singularities, residue theorem, Riemann sphere | ✅ Complete |
+| 06 | Vector Calculus | Line & surface integrals, gradient, divergence, curl, Stokes', Green's, divergence theorems, electromagnetism — see [Vector_Calculus](https://github.com/BrendanJamesLynskey/Vector_Calculus) and [VectorCalculusPrimer](https://github.com/BrendanJamesLynskey/VectorCalculusPrimer) | ✅ Complete |
+| 07 | Matrices & Determinants | Matrix operations, determinants, inverses, linear transformations, eigenvalues — see [Linear_Transformation_Visualiser](https://github.com/BrendanJamesLynskey/Linear_Transformation_Visualiser) and [Eigenvalue_Explorer](https://github.com/BrendanJamesLynskey/Eigenvalue_Explorer) | ✅ Complete |
+| 08 | [Differential Equations](https://github.com/BrendanJamesLynskey/Differential_Equations_Explorer) | Direction fields, damped oscillator, linear systems, Frobenius/Bessel/Legendre, wave & heat equations, Green's functions | ✅ Complete |
+
+---
+
 ## Mathematics
 
 Interactive single-page visualisations built with Plotly.js and vanilla HTML/CSS/JS — no build step, no dependencies to install.
