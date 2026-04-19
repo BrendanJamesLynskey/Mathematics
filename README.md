@@ -97,6 +97,19 @@ Interactive single-page visualisations built with Plotly.js and vanilla HTML/CSS
 | [Linear Transformation Visualiser](https://github.com/BrendanJamesLynskey/Linear_Transformation_Visualiser) | See how 2×2 matrices warp grids, circles, and vectors — eigenvalue/eigenvector overlays, SVD decomposition, animated transitions |
 | [Eigenvalue Explorer](https://github.com/BrendanJamesLynskey/Eigenvalue_Explorer) | Drag matrix entries and watch eigenvalues move in the complex plane — supports 2×2 to 4×4, trails, stability colouring, and characteristic polynomials |
 
+### Vector Spaces
+
+A six-repo series on vector spaces — from their 19th-century origins through the abstract axioms, advanced functional analysis, and the decompositions that drive modern audio, quantum mechanics, and machine learning. All built in the same DM Sans + JetBrains Mono + Playfair Display dark style, with canvas-based interactive visualisations.
+
+| Project | Description |
+|---------|-------------|
+| [Vector Spaces — A History](https://github.com/BrendanJamesLynskey/Vector_Spaces_History) | Interactive timeline 1799–1932, portrait cards, force-directed concept map, idea threads, and period quotations — from Hamilton's quaternions and Grassmann's Ausdehnungslehre through Peano's axioms to Hilbert, Banach, and von Neumann |
+| [Vector Spaces — The Basics](https://github.com/BrendanJamesLynskey/Vector_Spaces_Basics) | Ten tabs: axioms with live check, span & linear combinations, independence & rank, basis building, subspaces with Grassmann's formula, inner products, animated Gram-Schmidt, p-norm unit balls, linear maps, and change of basis |
+| [Vector Spaces — Advanced Topics](https://github.com/BrendanJamesLynskey/Vector_Spaces_Advanced) | Dual space (covectors as level sets), quotient cosets, direct sum decomposition, tensor products, ℓ² and Hilbert space with Parseval, Banach Lᵖ, operator norm & condition number, spectral theorem, Riesz representation |
+| [Vector Spaces — DSP for Sound, Audio & Music](https://github.com/BrendanJamesLynskey/Vector_Spaces_DSP_Audio) | Twelve tabs covering signal-as-vector (with audio playback), DFT, DCT/MDCT, STFT, wavelets, mel/MFCC, SVD denoising, PCA/KL, NMF, ICA, matching pursuit, CQT — every audio transform viewed as a change of basis |
+| [Vector Spaces in Quantum Mechanics](https://github.com/BrendanJamesLynskey/Vector_Spaces_Quantum) | State as unit vector, Bloch sphere with presets, observables & eigenprojectors, measurement sampling, unitary time evolution (animated), Schmidt rank & entanglement, density matrices inside the Bloch ball |
+| [Vector Spaces in Machine Learning](https://github.com/BrendanJamesLynskey/Vector_Spaces_ML) | Features as vectors with live linear classifier, word-embedding analogy parallelograms, kernel trick with RBF decision surface, PCA projections, attention as soft retrieval, contrastive geometry on the hypersphere, latent interpolation (lerp vs slerp) |
+
 ### Dynamical Systems & Control
 
 | Project | Description |
