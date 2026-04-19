@@ -52,7 +52,7 @@ Interactive slide decks on error detection and error correction — from parity 
 
 ---
 
-## Mathematical Basic Training for Science (inspired by R. Shankar's *Basic Training in Mathematics*)
+## Mathematical Basic Training for Science (a companion to R. Shankar's *Basic Training in Mathematics*)
 
 A self-contained curriculum in the core mathematical methods used across the physical sciences — from single-variable calculus through complex analysis, vector calculus, linear algebra and differential equations. Every topic is an interactive single-page app in the same Plotly.js + dark-theme style as the rest of this collection.
 
