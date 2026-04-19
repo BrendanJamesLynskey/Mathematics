@@ -63,9 +63,10 @@ A self-contained curriculum in the core mathematical methods used across the phy
 | 03 | [Calculus of Many Variables](https://github.com/BrendanJamesLynskey/Multivariable_Calculus_Explorer) | Scalar fields, partial derivatives, gradient, directional derivatives, Lagrange multipliers, Jacobians, solid angle | ✅ Complete |
 | 04 | [Infinite Series](https://github.com/BrendanJamesLynskey/Infinite_Series_Explorer) | Sequences, partial sums, convergence tests, power series & radius of convergence, asymptotic series | ✅ Complete |
 | 05 | [Complex Numbers & Functions of a Complex Variable](https://github.com/BrendanJamesLynskey/Complex_Analysis_Explorer) | Argand arithmetic, De Moivre, Euler, Cauchy–Riemann, singularities, residue theorem, Riemann sphere | ✅ Complete |
-| 06 | Vector Calculus | Line & surface integrals, gradient, divergence, curl, Stokes', Green's, divergence theorems, electromagnetism — see [Vector_Calculus](https://github.com/BrendanJamesLynskey/Vector_Calculus) and [VectorCalculusPrimer](https://github.com/BrendanJamesLynskey/VectorCalculusPrimer) | ✅ Complete |
-| 07 | Matrices & Determinants | Matrix operations, determinants, inverses, linear transformations, eigenvalues — see [Linear_Transformation_Visualiser](https://github.com/BrendanJamesLynskey/Linear_Transformation_Visualiser) and [Eigenvalue_Explorer](https://github.com/BrendanJamesLynskey/Eigenvalue_Explorer) | ✅ Complete |
-| 08 | [Differential Equations](https://github.com/BrendanJamesLynskey/Differential_Equations_Explorer) | Direction fields, damped oscillator, linear systems, Frobenius/Bessel/Legendre, wave & heat equations, Green's functions | ✅ Complete |
+| 06 | [Vector Calculus](https://github.com/BrendanJamesLynskey/VectorCalculusPrimer) | Vector fields, gradient, divergence, curl, line & surface integrals, Green's/Stokes'/divergence theorems, electromagnetism — paired with [Vector_Calculus](https://github.com/BrendanJamesLynskey/Vector_Calculus) | ✅ Complete |
+| 07 | [Matrices & Determinants](https://github.com/BrendanJamesLynskey/Linear_Transformation_Visualiser) | Matrix operations, determinants, inverses, linear transformations, eigenvalues & eigenvectors — paired with [Eigenvalue_Explorer](https://github.com/BrendanJamesLynskey/Eigenvalue_Explorer) | ✅ Complete |
+| 08 | [Linear Vector Spaces](https://github.com/BrendanJamesLynskey/Vector_Spaces_Basics) | Axioms, span & independence, inner products, Gram-Schmidt, operators, dual space, tensor products, eigenvalue problem, function spaces & Fourier integrals, Hilbert & Banach spaces — six-repo series: [History](https://github.com/BrendanJamesLynskey/Vector_Spaces_History), [Basics](https://github.com/BrendanJamesLynskey/Vector_Spaces_Basics), [Advanced](https://github.com/BrendanJamesLynskey/Vector_Spaces_Advanced), [DSP & Audio](https://github.com/BrendanJamesLynskey/Vector_Spaces_DSP_Audio), [Quantum](https://github.com/BrendanJamesLynskey/Vector_Spaces_Quantum), [ML](https://github.com/BrendanJamesLynskey/Vector_Spaces_ML) | ✅ Complete |
+| 09 | [Differential Equations](https://github.com/BrendanJamesLynskey/Differential_Equations_Explorer) | Direction fields, damped oscillator, linear systems, Frobenius/Bessel/Legendre, wave & heat equations, Green's functions | ✅ Complete |
 
 ---
 
@@ -82,6 +83,10 @@ Interactive single-page visualisations built with Plotly.js and vanilla HTML/CSS
 | [Fourier Series Visualisation](https://github.com/BrendanJamesLynskey/Fourier_Series_Visualisation) | Build periodic waveforms term by term — square, sawtooth, triangle and more with Gibbs phenomenon, frequency spectra, and adjustable harmonics |
 | [Curvature Visualiser](https://github.com/BrendanJamesLynskey/Curvature_Visualiser) | Osculating circles, curvature plots, and evolutes for parametric curves — ellipses, spirals, cardioids, Lissajous, and more |
 | [Vector Calculus Primer](https://github.com/BrendanJamesLynskey/VectorCalculusPrimer) | Intuition-first interactive primer (10 tabs): vector fields, gradient, divergence, curl, line integrals, fundamental theorems, vector algebra, del identities, electromagnetism applications, and 3D vector fields |
+| [Differential Calculus Explorer](https://github.com/BrendanJamesLynskey/Differential_Calculus_Explorer) | Limits with ε-δ strip, secant→tangent convergence, differentiation rules, L'Hôpital, critical/inflection detection, tangent linearisation |
+| [Integral Calculus Explorer](https://github.com/BrendanJamesLynskey/Integral_Calculus_Explorer) | Riemann sums (left/right/midpoint/trapezoidal/Simpson), FTC dual-plot, substitution, parts (LIATE), partial fractions, improper integrals, Gamma & Beta |
+| [Multivariable Calculus Explorer](https://github.com/BrendanJamesLynskey/Multivariable_Calculus_Explorer) | 3D surfaces, partial slices, gradient quiver on contours, directional derivatives, Lagrange multipliers, Jacobians, solid angle on the sphere |
+| [Infinite Series Explorer](https://github.com/BrendanJamesLynskey/Infinite_Series_Explorer) | Sequences with ε bands, partial sums, convergence tests (ratio/root/integral/comparison/alternating), radius of convergence, Stirling asymptotics |
 
 ### Complex Analysis
 
@@ -89,6 +94,7 @@ Interactive single-page visualisations built with Plotly.js and vanilla HTML/CSS
 |---------|-------------|
 | [Conformal Mapping Gallery](https://github.com/BrendanJamesLynskey/Conformal_Mapping_Gallery) | Interactive gallery of complex mappings — z², eᶻ, 1/z, Möbius, Joukowski airfoil — with grid warping, domain colouring, and animation |
 | [Riemann Zeta Visualisation](https://github.com/BrendanJamesLynskey/Riemann_Zeta_Visualisation) | Domain colouring of ζ(s) on the critical strip — explore non-trivial zeros, the critical line, and the functional equation |
+| [Complex Analysis Explorer](https://github.com/BrendanJamesLynskey/Complex_Analysis_Explorer) | Argand arithmetic, roots of unity, Euler's formula, Cauchy–Riemann surfaces, singularity classification, residue theorem with contour, stereographic Riemann sphere |
 
 ### Linear Algebra
 
@@ -116,6 +122,7 @@ A six-repo series on vector spaces — from their 19th-century origins through t
 |---------|-------------|
 | [ODE Phase Portraits](https://github.com/BrendanJamesLynskey/ODE_Phase_Portraits) | Vector fields and trajectories for 2D dynamical systems — Van der Pol, Lotka-Volterra, Duffing, with nullclines and fixed-point classification |
 | [Laplace Pole-Zero Explorer](https://github.com/BrendanJamesLynskey/Laplace_Pole_Zero_Explorer) | Interactive s-plane editor — drag poles and zeros, watch impulse response and Bode plots update live with stability classification |
+| [Differential Equations Explorer](https://github.com/BrendanJamesLynskey/Differential_Equations_Explorer) | Direction fields with RK4 trajectories, damped driven oscillator, 2×2 phase portraits, Bessel/Legendre/Airy, wave & heat equations, Green's function convolution |
 
 ### Abstract Algebra
 
