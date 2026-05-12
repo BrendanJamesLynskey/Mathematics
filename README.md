@@ -52,6 +52,31 @@ Interactive slide decks on error detection and error correction — from parity 
 
 ---
 
+## Mathematics for Machine Learning (a companion to Deisenroth, Faisal &amp; Ong's *Mathematics for Machine Learning*)
+
+A twelve-deck interactive companion to the Cambridge University Press textbook by **Marc Peter Deisenroth, A. Aldo Faisal &amp; Cheng Soon Ong** (2020) &mdash; the standard "honest mathematics, written for ML readers" text. Decks 01&ndash;07 develop the foundations (linear algebra, geometry, matrix decompositions, calculus, probability, optimisation); decks 08&ndash;12 use them to derive the four canonical ML problems (regression, PCA, GMM, SVM). Every deck has at least one in-browser interactive widget.
+
+### [Open the Mathematics for Machine Learning Series](https://brendanjameslynskey.github.io/MML_Hub/)
+
+| # | Topic | Coverage | Status |
+| --- | --- | --- | --- |
+| 01 | [Introduction and Motivation](https://github.com/BrendanJamesLynskey/MML_01_Introduction) | The four pillars, the four foundations, and an interactive dependency graph of the book | ✅ Complete |
+| 02 | [Linear Algebra](https://github.com/BrendanJamesLynskey/MML_02_Linear_Algebra) | Systems, matrices, Gaussian elimination (interactive), vector spaces, basis &amp; rank, linear maps, affine | ✅ Complete |
+| 03 | [Analytic Geometry](https://github.com/BrendanJamesLynskey/MML_03_Analytic_Geometry) | Norms, inner products, angles, orthonormal bases, orthogonal projection (interactive), rotations | ✅ Complete |
+| 04 | [Matrix Decompositions](https://github.com/BrendanJamesLynskey/MML_04_Matrix_Decompositions) | Determinant, trace, eigendecomposition, spectral theorem, Cholesky, SVD, Eckart&ndash;Young, interactive SVD compressor | ✅ Complete |
+| 05 | [Vector Calculus](https://github.com/BrendanJamesLynskey/MML_05_Vector_Calculus) | Gradient, Jacobian, matrix-derivative identities, chain rule, backprop, autodiff, Hessian, gradient-descent visualiser | ✅ Complete |
+| 06 | [Probability and Distributions](https://github.com/BrendanJamesLynskey/MML_06_Probability_and_Distributions) | Sum/product/Bayes, expectation &amp; variance, multivariate Gaussian (conditioning), conjugacy, exponential family &mdash; with interactive Bayes' theorem and bivariate Gaussian | ✅ Complete |
+| 07 | [Continuous Optimisation](https://github.com/BrendanJamesLynskey/MML_07_Continuous_Optimisation) | Gradient descent + momentum, Lagrange multipliers (interactive), KKT, convexity, LP/QP, the Lagrange dual | ✅ Complete |
+| 08 | [When Models Meet Data](https://github.com/BrendanJamesLynskey/MML_08_When_Models_Meet_Data) | ERM, bias-variance, regularisation as a prior, cross-validation, MLE vs MAP, directed graphical models &mdash; interactive polynomial-fitting demo | ✅ Complete |
+| 09 | [Linear Regression](https://github.com/BrendanJamesLynskey/MML_09_Linear_Regression) | Least squares as projection, ridge = MAP, Bayesian linear regression, posterior predictive, feature maps &mdash; interactive Bayesian regression playground | ✅ Complete |
+| 10 | [Dimensionality Reduction with PCA](https://github.com/BrendanJamesLynskey/MML_10_PCA) | Two equivalent objectives, eigendecomposition of covariance, PCA via SVD, high-D dual trick, probabilistic PCA &mdash; interactive 2D PCA | ✅ Complete |
+| 11 | [Density Estimation with GMMs](https://github.com/BrendanJamesLynskey/MML_11_Gaussian_Mixture_Models) | Mixture density, latent variables, EM as a variational lower bound, responsibilities, M-step formulae &mdash; interactive 2D EM animator | ✅ Complete |
+| 12 | [Classification with SVMs](https://github.com/BrendanJamesLynskey/MML_12_Support_Vector_Machines) | Max margin, soft margin / hinge, Lagrange dual, support vectors, kernel trick (linear / poly / RBF) &mdash; interactive 2D kernel SVM | ✅ Complete |
+
+Book is freely available as a [PDF at mml-book.github.io](https://mml-book.github.io/book/mml-book.pdf). The companion is independent and unofficial &mdash; all credit for the underlying exposition belongs to Deisenroth, Faisal &amp; Ong.
+
+---
+
 ## Mathematical Basic Training for Science (a companion to R. Shankar's *Basic Training in Mathematics*)
 
 A self-contained curriculum in the core mathematical methods used across the physical sciences — from single-variable calculus through complex analysis, vector calculus, linear algebra and differential equations. Every topic is an interactive single-page app in the same Plotly.js + dark-theme style as the rest of this collection.
