@@ -52,6 +52,33 @@ Interactive slide decks on error detection and error correction — from parity 
 
 ---
 
+## Quantitative Finance (a companion to Paul Wilmott's *Paul Wilmott Introduces Quantitative Finance*)
+
+A fourteen-deck interactive companion to the John Wiley &amp; Sons textbook by **Paul Wilmott** (2nd edition, 2007) &mdash; the standard derivative-pricing reference written from the trader's point of view. Decks 01&ndash;05 introduce the products, markets and the random walk; decks 06&ndash;10 develop the Black&ndash;Scholes world and its exotic extensions; decks 11&ndash;12 cover fixed income and interest-rate models; decks 13&ndash;14 close with risk management and the numerical methods that price what closed forms cannot. Every deck has at least one in-browser interactive widget.
+
+### [Open the Quantitative Finance Series](https://brendanjameslynskey.github.io/Wilmott_QF_Hub/)
+
+| # | Topic | Coverage | Status |
+| --- | --- | --- | --- |
+| 01 | [Products and Markets](https://github.com/BrendanJamesLynskey/Wilmott_QF_01_Products_and_Markets) | Equities, dividends, splits, commodities, currencies, indices, time value of money, fixed-income basics, forwards and futures, no-arbitrage &mdash; interactive forward-pricing calculator | ✅ Complete |
+| 02 | [Derivatives](https://github.com/BrendanJamesLynskey/Wilmott_QF_02_Derivatives) | Calls, puts, payoff diagrams, put&ndash;call parity, binaries, bull/bear spreads, straddles, strangles, butterflies, condors, calendars &mdash; interactive option-strategy composer | ✅ Complete |
+| 03 | [The Binomial Model](https://github.com/BrendanJamesLynskey/Wilmott_QF_03_Binomial_Model) | One-step and multi-step trees, risk-neutral probability, delta hedging, the continuous-time limit &mdash; interactive binomial-tree pricer | ✅ Complete |
+| 04 | [The Random Behavior of Assets](https://github.com/BrendanJamesLynskey/Wilmott_QF_04_Random_Behavior_of_Assets) | Returns, timescales, drift &amp; volatility, the lognormal random walk, the Wiener process &mdash; interactive GBM path simulator | ✅ Complete |
+| 05 | [Elementary Stochastic Calculus](https://github.com/BrendanJamesLynskey/Wilmott_QF_05_Stochastic_Calculus) | Markov &amp; martingale properties, quadratic variation, Brownian motion, stochastic integration, SDEs, It&ocirc;'s lemma &mdash; interactive Brownian-motion + quadratic-variation visualiser | ✅ Complete |
+| 06 | [The Black&ndash;Scholes Model](https://github.com/BrendanJamesLynskey/Wilmott_QF_06_Black_Scholes_Model) | The special portfolio, elimination of risk by delta hedging, no arbitrage, the BS PDE, assumptions, boundary &amp; final conditions, PDE solution methods &mdash; interactive option-value surface viewer | ✅ Complete |
+| 07 | [The Greeks and Hedging](https://github.com/BrendanJamesLynskey/Wilmott_QF_07_Greeks_and_Hedging) | Formul&aelig; for calls, puts, binaries; Δ, Γ, Θ, Vega, ρ; implied volatility; the classification of hedging types &mdash; interactive Greeks explorer | ✅ Complete |
+| 08 | [Overview of Volatility Modeling](https://github.com/BrendanJamesLynskey/Wilmott_QF_08_Volatility) | Actual, historical, implied &amp; forward volatility; GARCH; range-based estimators; skews and smiles; deterministic, stochastic and uncertain vol &mdash; interactive implied-vol solver and smile/skew explorer | ✅ Complete |
+| 09 | [Exotic and Path-dependent Options](https://github.com/BrendanJamesLynskey/Wilmott_QF_09_Exotic_Options) | The option taxonomy: time and path dependence, dimensionality, order, embedded decisions. Barriers, Asians, lookbacks, compounds, Parisians &mdash; interactive barrier-option Monte&nbsp;Carlo | ✅ Complete |
+| 10 | [Multi-asset Options](https://github.com/BrendanJamesLynskey/Wilmott_QF_10_Multi_asset_Options) | Multidimensional lognormal walks, the correlation matrix, Cholesky, exchange options (Margrabe), basket options, correlation vs cointegration &mdash; interactive correlated-GBM scatter and basket-payoff explorer | ✅ Complete |
+| 11 | [Fixed-income Products, Yield and Swaps](https://github.com/BrendanJamesLynskey/Wilmott_QF_11_Fixed_Income) | Zero-coupon and coupon bonds, money-market account, FRAs, repos, STRIPS, day-count conventions, YTM, duration, convexity, bootstrapping forward rates, vanilla IRS &mdash; interactive bond-yield / duration calculator | ✅ Complete |
+| 12 | [Interest Rate Models](https://github.com/BrendanJamesLynskey/Wilmott_QF_12_Interest_Rate_Models) | Stochastic short rates (Vasicek, CIR, Ho&ndash;Lee, Hull&ndash;White), the bond-pricing equation, the market price of risk, yield-curve fitting; the HJM forward-rate framework and the BGM LIBOR market model &mdash; interactive short-rate path simulator | ✅ Complete |
+| 13 | [Portfolio Management, VaR &amp; Risk](https://github.com/BrendanJamesLynskey/Wilmott_QF_13_Portfolio_and_Risk) | The Kelly criterion, diversification, Modern Portfolio Theory &amp; the efficient frontier, CAPM, VaR for assets and derivatives, credit risk &amp; the Merton model, copulas, CrashMetrics, the great derivatives disasters &mdash; interactive efficient-frontier + VaR explorer | ✅ Complete |
+| 14 | [Numerical Methods](https://github.com/BrendanJamesLynskey/Wilmott_QF_14_Numerical_Methods) | Finite differences, Monte&nbsp;Carlo, numerical integration; the explicit FD scheme for BS, Monte&nbsp;Carlo for European and American options (Longstaff&ndash;Schwartz), low-discrepancy sequences &mdash; interactive Monte&nbsp;Carlo + finite-difference pricer | ✅ Complete |
+
+Book is by Paul Wilmott, John Wiley &amp; Sons (2nd edition, 2007), ISBN 978-0-470-31958-1. The companion is independent and unofficial &mdash; all credit for the underlying exposition belongs to the author.
+
+---
+
 ## Mathematics for Machine Learning (a companion to Deisenroth, Faisal &amp; Ong's *Mathematics for Machine Learning*)
 
 A twelve-deck interactive companion to the Cambridge University Press textbook by **Marc Peter Deisenroth, A. Aldo Faisal &amp; Cheng Soon Ong** (2020) &mdash; the standard "honest mathematics, written for ML readers" text. Decks 01&ndash;07 develop the foundations (linear algebra, geometry, matrix decompositions, calculus, probability, optimisation); decks 08&ndash;12 use them to derive the four canonical ML problems (regression, PCA, GMM, SVM). Every deck has at least one in-browser interactive widget.
