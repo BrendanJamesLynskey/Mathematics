@@ -155,6 +155,15 @@ Interactive single-page visualisations built with Plotly.js and vanilla HTML/CSS
 | [Linear Transformation Visualiser](https://github.com/BrendanJamesLynskey/Linear_Transformation_Visualiser) | See how 2×2 matrices warp grids, circles, and vectors — eigenvalue/eigenvector overlays, SVD decomposition, animated transitions |
 | [Eigenvalue Explorer](https://github.com/BrendanJamesLynskey/Eigenvalue_Explorer) | Drag matrix entries and watch eigenvalues move in the complex plane — supports 2×2 to 4×4, trails, stability colouring, and characteristic polynomials |
 
+#### Matrix Methods in Engineering
+
+A two-deck pair on the matrix structures that engineers actually test for &mdash; symmetry, definiteness, unitarity &mdash; and what each one guarantees about a real system. Built in the same interactive slide-deck style as the companion series above, with live canvas widgets and a long-form PDF alongside each deck.
+
+| Project | Description |
+|---------|-------------|
+| [Network Parameters — S, Z and Y](https://github.com/BrendanJamesLynskey/Matrix_Methods_Network_Parameters) | One linear operator, three coordinate systems: reciprocity as transpose symmetry, passivity as positive semidefiniteness, losslessness as unitarity. Poles and zeros as eigenvalues of the state matrix, causality and Kramers–Kronig, Hamiltonian passivity enforcement, the Smith chart as a Möbius map. Interactive two-port scattering explorer, pole–zero explorer, and bilinear map |
+| [Digital Filters — State, Structure and Stability](https://github.com/BrendanJamesLynskey/Matrix_Concepts_Digital_Filters) | The same structures in discrete time: eigenvalues of the state matrix and the unit circle, Wiener–Hopf with Toeplitz Hermitian PSD autocorrelation, the eigenfilter as a Rayleigh quotient, paraunitary filter banks and perfect reconstruction. Interactive pole explorer, eigenfilter bowl, and a paraunitary rotation you can break |
+
 ### Vector Spaces
 
 A six-repo series on vector spaces — from their 19th-century origins through the abstract axioms, advanced functional analysis, and the decompositions that drive modern audio, quantum mechanics, and machine learning. All built in the same DM Sans + JetBrains Mono + Playfair Display dark style, with canvas-based interactive visualisations.
