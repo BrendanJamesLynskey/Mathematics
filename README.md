@@ -157,12 +157,13 @@ Interactive single-page visualisations built with Plotly.js and vanilla HTML/CSS
 
 #### Matrix Methods in Engineering
 
-A two-deck pair on the matrix structures that engineers actually test for &mdash; symmetry, definiteness, unitarity &mdash; and what each one guarantees about a real system. Built in the same interactive slide-deck style as the companion series above, with live canvas widgets and a long-form PDF alongside each deck.
+A three-deck series on the matrix structures that engineers actually test for &mdash; symmetry, definiteness, unitarity &mdash; what each one guarantees about a real system, and what happens when you take the whole apparatus to a real design problem. Built in the same interactive slide-deck style as the companion series above, with live canvas widgets and a long-form PDF alongside each deck.
 
 | Project | Description |
 |---------|-------------|
 | [Network Parameters — S, Z and Y](https://github.com/BrendanJamesLynskey/Matrix_Methods_Network_Parameters) | One linear operator, three coordinate systems: reciprocity as transpose symmetry, passivity as positive semidefiniteness, losslessness as unitarity. Poles and zeros as eigenvalues of the state matrix, causality and Kramers–Kronig, Hamiltonian passivity enforcement, the Smith chart as a Möbius map. Interactive two-port scattering explorer, pole–zero explorer, and bilinear map |
 | [Digital Filters — State, Structure and Stability](https://github.com/BrendanJamesLynskey/Matrix_Concepts_Digital_Filters) | The same structures in discrete time: eigenvalues of the state matrix and the unit circle, Wiener–Hopf with Toeplitz Hermitian PSD autocorrelation, the eigenfilter as a Rayleigh quotient, paraunitary filter banks and perfect reconstruction. Interactive pole explorer, eigenfilter bowl, and a paraunitary rotation you can break |
+| [Equalisation in High-Speed Serial Links](https://github.com/BrendanJamesLynskey/SerDes_Equalisation) | The two above, applied end to end: one 28 GBd backplane channel taken from S-parameters through the pulse response and every equaliser block to a noise budget that lands 1.36 dB short — then seven remedies priced in dB, showing the board is worth five times what more equalisation is worth. Interactive via-stub explorer and a full equaliser chain with live budget, Q and BER |
 
 ### Vector Spaces
 
