@@ -26,6 +26,8 @@ Interactive slide decks covering modern cryptographic systems end-to-end — fro
 | 12 | Secure Multi-Party Computation | 27 | ✅ Complete |
 | 13 | TLS 1.3 Handshake | 25 | ✅ Complete |
 
+**Related:** [FHE Accelerator Simulators](https://github.com/BrendanJamesLynskey/FHE_Hub_Accelerator_Simulators) ([live](https://brendanjameslynskey.github.io/FHE_Hub_Accelerator_Simulators/)) — five decks and a SimPy simulator that take FHE (deck 08) into accelerator hardware: CKKS bootstrapping as a workload, key-switching and NTT costs, and optical NTT engines.
+
 ---
 
 ## Coding Theory
