@@ -230,6 +230,8 @@ A six-repo series on vector spaces — from their 19th-century origins through t
 |---------|-------------|
 | [Numerical Methods](https://github.com/BrendanJamesLynskey/Numerical_Methods) | Root finding (bisection, Newton, secant), numerical integration, ODE solvers (Euler, RK4), and polynomial interpolation — all animated step-by-step |
 
+**Related:** [Introduction to Simulation](https://github.com/BrendanJamesLynskey/Introduction_to_Simulation) ([live](https://brendanjameslynskey.github.io/Introduction_to_Simulation/)) — where these methods go to work in engineering: finite differences, elements and volumes in field solvers, the CFL condition, stiffness and implicit integration in SPICE, adaptive step control and breakpoints (with an interactive four-solver demo), and Monte Carlo with variance reduction.
+
 ### Control Theory
 
 | Project | Description |
