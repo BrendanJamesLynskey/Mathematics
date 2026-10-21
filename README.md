@@ -4,6 +4,20 @@ Interactive visualisations, presentation series, and explorations in pure mathem
 
 ---
 
+## Series in this index
+
+| Series | What it covers |
+| --- | --- |
+| **[Cryptography](https://brendanjameslynskey.github.io/Cryptography/)** | Thirteen decks from finite fields and ECC to FHE, zero knowledge and TLS 1.3, with RTL and Python |
+| **[Coding Theory](https://brendanjameslynskey.github.io/Coding/)** | Thirteen decks from parity and Hamming codes to LDPC and polar codes |
+| **[Quantitative Finance](https://brendanjameslynskey.github.io/Wilmott_QF_Hub/)** | Fourteen decks, a companion to Paul Wilmott Introduces Quantitative Finance |
+| **[Mathematics for Machine Learning](https://brendanjameslynskey.github.io/MML_Hub/)** | Twelve decks, a companion to Deisenroth, Faisal &amp; Ong |
+| **[Mathematical Basic Training for Science](#mathematical-basic-training-for-science-a-companion-to-r-shankars-basic-training-in-mathematics)** | Nine interactive explorers, a companion to Shankar's Basic Training in Mathematics (listed below) |
+| **[Historical Mathematicians](https://brendanjameslynskey.github.io/Historical_Mathematicians/)** | The lives and discoveries of history's greatest mathematicians |
+| **[Historical Physicists](https://brendanjameslynskey.github.io/Historical_Physicists/)** | From Galileo to Penrose: the physicists and their experiments |
+
+---
+
 ## Cryptography
 
 Interactive slide decks covering modern cryptographic systems end-to-end — from the underlying mathematics through NIST standards to SystemVerilog RTL and Python implementations.

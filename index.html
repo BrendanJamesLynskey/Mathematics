@@ -212,6 +212,22 @@
 <!-- portfolio-strip:start (brief 40) -->
 <style>.bl-strip{display:flex;flex-wrap:wrap;align-items:center;gap:.25rem .6rem;box-sizing:border-box;width:100%;align-self:stretch;margin:0;padding:.45rem 1rem;background:var(--bg-card,var(--surface,var(--bg2,rgba(127,127,127,.08))));border-bottom:1px solid var(--border,rgba(127,127,127,.25));color:var(--text-secondary,var(--text2,var(--fg-dim,var(--muted,inherit))));font:500 13px/1.5 var(--font-body,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif);letter-spacing:.01em;position:relative;z-index:50;text-align:left}.bl-strip b{color:var(--text-primary,var(--text,var(--fg,inherit)));font-weight:700}.bl-strip a{color:var(--text-primary,var(--text,var(--fg,inherit)));text-decoration:underline;text-decoration-color:var(--accent,currentColor);text-decoration-thickness:2px;text-underline-offset:4px;padding:.15rem 0}.bl-strip a:hover,.bl-strip a:focus-visible{text-decoration-thickness:3px}.bl-strip span{opacity:.6}</style>
 <!-- portfolio-strip:end -->
+<!-- series-index:start (brief 45) -->
+<style>
+  .series-index { background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
+                  padding: 1.25rem 1.5rem; margin: 0 0 2.5rem; }
+  .series-index h2 { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 1.35rem; color: #fafafa;
+                     margin: 0 0 0.75rem; }
+  .series-index ul { list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+                     gap: 0.55rem 1.5rem; }
+  .series-index li { font-size: 0.85rem; color: var(--text2); line-height: 1.45; overflow-wrap: anywhere; }
+  .series-index a { display: inline-block; color: #fafafa; font-weight: 700; font-size: 0.95rem;
+                    text-decoration: underline; text-decoration-color: var(--accent); text-decoration-thickness: 2px;
+                    text-underline-offset: 3px; padding: 0.1rem 0; }
+  .series-index a:hover, .series-index a:focus-visible { color: var(--accent); }
+  .series-index li span { display: block; }
+</style>
+<!-- series-index:end -->
 </head>
 <body>
 <!-- portfolio-strip:start (brief 40) -->
@@ -223,6 +239,20 @@
   <h1>Mathematics &amp; Engineering</h1>
   <p class="subtitle">Interactive visualisations, presentation series, and explorations in pure mathematics, cryptography, and coding theory.</p>
 </header>
+<!-- series-index:start (brief 45) -->
+<nav class="series-index" aria-labelledby="series-h">
+  <h2 id="series-h">Series in this index</h2>
+  <ul>
+    <li><a href="https://brendanjameslynskey.github.io/Cryptography/">Cryptography</a><span>Thirteen decks from finite fields and ECC to FHE, zero knowledge and TLS 1.3, with RTL and Python</span></li>
+    <li><a href="https://brendanjameslynskey.github.io/Coding/">Coding Theory</a><span>Thirteen decks from parity and Hamming codes to LDPC and polar codes</span></li>
+    <li><a href="https://brendanjameslynskey.github.io/Wilmott_QF_Hub/">Quantitative Finance</a><span>Fourteen decks, a companion to Paul Wilmott Introduces Quantitative Finance</span></li>
+    <li><a href="https://brendanjameslynskey.github.io/MML_Hub/">Mathematics for Machine Learning</a><span>Twelve decks, a companion to Deisenroth, Faisal &amp; Ong</span></li>
+    <li><a href="#basic-training">Mathematical Basic Training for Science</a><span>Nine interactive explorers, a companion to Shankar's Basic Training in Mathematics (listed below)</span></li>
+    <li><a href="https://brendanjameslynskey.github.io/Historical_Mathematicians/">Historical Mathematicians</a><span>The lives and discoveries of history's greatest mathematicians</span></li>
+    <li><a href="https://brendanjameslynskey.github.io/Historical_Physicists/">Historical Physicists</a><span>From Galileo to Penrose: the physicists and their experiments</span></li>
+  </ul>
+</nav>
+<!-- series-index:end -->
 
 <!-- ============================================================ -->
 <!-- CRYPTOGRAPHY -->
@@ -332,7 +362,7 @@
 <!-- ============================================================ -->
 <!-- MATHEMATICAL BASIC TRAINING FOR SCIENCE -->
 <!-- ============================================================ -->
-<div class="section-header">
+<div class="section-header" id="basic-training">
   <span class="section-icon">&#x1f4d0;</span>
   <h2>Mathematical Basic Training for Science</h2>
   <span class="count">9 chapters</span>
