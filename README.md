@@ -6,6 +6,8 @@ Interactive visualisations, presentation series, and explorations in pure mathem
 
 ## Series in this index
 
+7 of the library's 64 series (a series is one hub page that lists its decks).
+
 | Series | What it covers |
 | --- | --- |
 | **[Cryptography](https://brendanjameslynskey.github.io/Cryptography/)** | Thirteen decks from finite fields and ECC to FHE, zero knowledge and TLS 1.3, with RTL and Python |
